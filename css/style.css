@@ -1,0 +1,1568 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: gray;
+    max-width: 100%;
+    overflow: auto;
+}
+
+/* Navbar */
+
+.navbar {
+    top: 20px;
+    left: 15%;
+    width: 70%;
+}
+
+.nav-logo {
+    filter: invert();
+}
+
+.navbar a img {
+    width: 50px;
+}
+
+
+.navbar-brand {
+    transition: 0.3s;
+}
+
+.navbar-brand:hover {
+    color: chocolate;
+}
+
+.nav-item {
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.nav-item a {
+    color: white;
+}
+
+.nav-item a:hover {
+    color: chocolate;
+
+}
+
+
+/* Main-Section */
+
+
+
+@keyframes imgslider {
+    0% {
+        transform: scale(1.7);
+    }
+
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+.carousel-item {
+    width: 100% !important;
+    height: 100vh;
+}
+
+.carousel-item img {
+    animation: imgslider 6s;
+    margin: 0 auto;
+    transform-origin: center;
+}
+
+.idk {
+    text-align: center;
+}
+
+.idk::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    top: 60%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    border-radius: 8%;
+    z-index: -1;
+}
+
+.idk h6 {
+    color: #BC6C25;
+}
+
+.idk h2 {
+    font-size: 4rem;
+}
+
+
+.Sliderdatabuttons a:hover {
+    color: #BC6C25;
+}
+
+.checkmenu {
+    color: white;
+    font-weight: 500;
+    background-color: #BC6C25;
+}
+
+.checkmenu:hover {
+    background-color: rgba(245, 245, 220, 0.801);
+}
+
+
+/* About-Section */
+
+
+.About-Section {
+    height: 80vh;
+    min-height: 633px;
+    background-color: #4d3821;
+}
+
+
+
+.video1 {
+    width: 540px;
+    height: 540px;
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    border-radius: 5%;
+}
+
+.video1 video {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.video1::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1));
+    height: 100%;
+    width: 100%;
+    transition: top 0.3s ease;
+}
+
+
+
+.video-txt {
+    position: absolute;
+    bottom: 5%;
+    left: 8%;
+    text-align: left;
+    color: white;
+    font-weight: bolder;
+    z-index: 2;
+}
+
+.cafekl {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.cafekl p {
+    color: tomato;
+}
+
+.cafekl h4 {
+    width: 60%;
+    color: wheat;
+}
+
+.cafekl span a {
+    color: #BC6C25;
+    text-decoration: none;
+}
+
+.cafekl span a:hover {
+    color: #ff7700;
+    transition: 0.2s;
+}
+
+.cafekl h3:hover {
+    color: #BC6C25;
+}
+
+
+/* Cards-Section */
+
+.cards-section {
+    background-color: #B78752;
+    min-height: 633px;
+}
+
+.cards-title {
+    top: 10%;
+    left: 50%;
+    color: whitesmoke;
+}
+
+.card {
+    transform: scale(0.75);
+    height: 70vh;
+    overflow: hidden;
+    border: none;
+    border-radius: 5%;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background: linear-gradient(#B3B6B5, #ffffff, #70706F);
+    height: 5%;
+    width: 100%;
+    z-index: 5;
+    transition: top 0.5s ease-in-out;
+}
+
+.card:hover::before {
+    top: -20%;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1));
+    height: 100%;
+    width: 100%;
+    transition: top 0.5s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.card:hover:after {
+    top: 0px;
+}
+
+.card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Menu-Section */
+
+.Menu-Section {
+    height: 100vh;
+}
+
+.main-menu img {
+    width: 100%;
+    height: 100%;
+}
+
+.Breakfast {
+    top: 20%;
+    left: 20%;
+}
+
+.menu-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 500px;
+}
+
+.Breakfast h6 {
+    color: orange;
+    font-weight: 600;
+}
+
+.Breakfast h2 {
+    color: goldwhite;
+}
+
+.menu-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+
+.price {
+    color: cyan;
+    font-weight: bold;
+}
+
+
+
+.coffee {
+    top: 20%;
+    left: 60%;
+}
+
+.menu-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 500px;
+}
+
+.coffee h6 {
+    color: orange;
+    font-weight: 600;
+}
+
+.coffee h2 {
+    color: white;
+}
+
+.menu-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+
+.price {
+    color: cyan;
+    font-weight: bold;
+}
+
+
+/* Contact Page */
+
+
+.title {
+    top: 10%;
+    left: 15%;
+}
+
+.contact-page{
+    height: 70vh;
+}
+
+
+.contact::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1));
+    height: 100%;
+    width: 100%;
+}
+
+
+.formone {
+    top: 25%;
+    left: 15%;
+}
+
+.form-label {
+    color: white;
+}
+
+.form-control {
+    transition: 0.3s;
+    border: none;
+}
+
+.formem {
+    padding-left: 20px;
+}
+
+.msg {
+    height: 150px;
+    width: 540px;
+}
+
+.form-control:hover {
+    background-color: #BC6C25;
+}
+
+.sndmsgbtn {
+    background-color: #BC6C25;
+    color: white;
+    left: 37%;
+}
+
+.sndmsgbtn:hover {
+    background-color: #ffffff;
+    color: #bc6b25ab;
+}
+
+
+@keyframes mapanimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.arabianacademymap {
+    border: none;
+    top: 15%;
+    right: 10%;
+    animation: mapanimation 3.5s;
+}
+
+
+.info1 {
+    color: white;
+    top: 95%;
+    left: 15%;
+}
+
+.info2 {
+    color: white;
+    top: 95%;
+    left: 40%;
+}
+
+
+.info3 {
+    color: white;
+    top: 95%;
+    left: 70%;
+}
+
+
+
+/* Reviews-Section */
+
+.Reviews-Section {
+    background-color: #7C5C52;
+    height: 150vh;
+    min-height: 633px;
+}
+
+.review-title {
+    top: 10%;
+    left: 50%;
+}
+
+.review-title h2 {
+    font-size: 4rem;
+}
+
+
+
+.rev-line {
+    background-color: #7e5c51;
+    width: 25px;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+.rev-line::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto 0;
+    z-index: 1;
+}
+
+
+.review1 {
+    top: 28%;
+    left: 20%;
+    width: 500px;
+    height: 310px;
+    overflow: hidden;
+    background-color: #b78752;
+    border: 5px solid white;
+}
+
+.review2 {
+    top: 23%;
+    left: 55%;
+    width: 500px;
+    height: 310px;
+    overflow: hidden;
+    background-color: #b78752;
+    border: 5px solid white;
+}
+
+.review3 {
+    top: 18%;
+    left: 20%;
+    width: 500px;
+    height: 310px;
+    overflow: hidden;
+    background-color: #b78752;
+    border: 5px solid white;
+}
+
+
+
+.bg-img {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 500px;
+    height: 300px;
+}
+
+.rev-img {
+    position: absolute;
+    width: 80px;
+    top: 30px;
+    left: 30px;
+}
+
+.revname {
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 130px;
+}
+
+.revtype {
+    color: white;
+    position: absolute;
+    top: 27%;
+    left: 43%;
+    color: orange;
+}
+
+.rev-content {
+    top: 55%;
+    left: 20px;
+    color: white;
+    font-weight: bolder;
+}
+
+.rating {
+    bottom: 0;
+    left: 20px;
+}
+
+
+/* Reservation */
+
+
+.menu-box1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 700px;
+    height: 600px;
+}
+
+
+
+
+
+.formone input {
+    width: 250px;
+    height: 50px;
+}
+
+
+.form-control {
+    transition: 0.3s;
+    border: none;
+}
+
+.resnum {
+    width: 100%;
+    height: 600px;
+}
+
+.resmsg {
+    width: 100%;
+    height: 100px;
+}
+
+
+.form-control:hover {
+    background-color: #BC6C25;
+}
+
+.sndresmsgbtn {
+    background-color: #BC6C25;
+    color: white;
+    left: 30%;
+}
+
+.sndresmsgbtn:hover {
+    background-color: #ffffff;
+    color: #bc6b25ab;
+}
+
+
+.endsec {
+    height: 100px;
+    background-color: black;
+}
+
+
+.menu-box2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 600px;
+    height: 200px;
+}
+
+
+/* ========== MEDIA QUERIES ========== */
+
+
+@media (max-width: 600px) {
+    .navbar {
+        width: 100%;
+        left: 0;
+        top: 0%;
+        border-radius: 0;
+    }
+
+    .About-Section {
+        height: 1100px;
+    }
+
+    .video-txt {
+        bottom: 5%;
+        left: 7%;
+        text-align: center;
+    }
+
+    .video1 {
+        width: 300px;
+        height: 300px;
+        top: 5%;
+        left: 8%;
+    }
+
+    .cafekl {
+        top: 35%;
+        left: 25%;
+        width: 50%;
+        text-align: center;
+    }
+
+    .cafekl h4 {
+        width: 100%;
+    }
+
+
+    .cards-section {
+        height: 1500px;
+    }
+
+    .cards-title {
+        top: 4%;
+    }
+
+    .card {
+        top: 40%;
+        height: 300px;
+        transform: scale(1);
+    }
+
+    .cards .cardss {
+        margin-bottom: 20px;
+    }
+
+
+    .Menu-Section {
+        height: 1500px;
+    }
+
+
+    .main-menu img {
+        transform: scale(11.8);
+    }
+
+    .Breakfast {
+        top: 2%;
+        left: 0%;
+    }
+
+    .coffee {
+        top: 50%;
+        left: 0%;
+    }
+
+    .Breakfast,
+    .coffee {
+        position: static;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .menu-box {
+        width: 100% !important;
+    }
+
+
+
+    .Reviews-Section {
+        height: 1300px;
+    }
+
+
+    .formone {
+        position: static;
+        padding: 20px;
+    }
+
+    .msg {
+        width: 100%;
+    }
+
+    .sndmsgbtn {
+        position: static;
+        margin-top: 15px;
+        display: block;
+    }
+
+    .review-title {
+        top: 5%;
+        left: 50%;
+        font-size: 1.5rem;
+    }
+
+    .review-title h2 {
+        font-size: 3rem;
+    }
+
+    .review1,
+    .review2,
+    .review3 {
+        width: 90%;
+        top: 10%;
+        left: 5% !important;
+        margin-bottom: 20px;
+        position: absolute;
+        height: 350px;
+    }
+
+    .rev-line {
+        display: none;
+    }
+
+   
+
+    .revtype {
+        color: white;
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        color: orange;
+    }
+
+    .rev-content {
+        top: 42%;
+        left: 20px;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .rating {
+        bottom: 0;
+        left: 30px;
+    }
+
+    .review-title {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .title {
+    top: 10%;
+    left: 15%;
+}
+
+.contact{
+    height: 1700px;
+}
+
+
+.contact img{
+    transform: scale(0.5);
+}
+
+
+
+.formone {
+    top: 25%;
+    left: 5%;
+}
+
+.formn{
+    flex-direction: column;
+}
+
+.formem{
+    padding: 0%;
+}
+
+.form-label{
+    width: 50px;
+}
+
+.msg {
+    height: 120px;
+    width: 100%;
+}
+
+
+.sndmsgbtn {
+    background-color: #BC6C25;
+    color: white;
+    left: 25%;
+}
+
+
+
+.info1{
+    top: 1000px;
+}
+
+.info2{
+    top: 1300px;
+    left: 20%;
+}
+
+.info3{
+    top: 1500px;
+    left: 10%;
+}
+
+    .arabianacademymap {
+        width: 70%;
+        height: 150px;
+        position: static;
+        top: 780px;
+        left: 15%;
+    }
+}
+
+@media (min-width: 601px) and (max-width:768px) {
+    .navbar {
+        width: 100%;
+        left: 0;
+        top: 0%;
+        border-radius: 0;
+    }
+
+    .About-Section {
+        height: 900px;
+    }
+
+    .video-txt {
+        bottom: 5%;
+        left: 5%;
+        text-align: center;
+    }
+
+    .video1 {
+        width: 300px;
+        height: 300px;
+        top: 5%;
+        left: 25%;
+    }
+
+    .cafekl {
+        top: 42%;
+        left: 25%;
+        width: 50%;
+        text-align: center;
+    }
+
+    .cafekl h4 {
+        width: 100%;
+    }
+
+
+    .cards-section {
+        height: 1500px;
+    }
+
+    .cards-title {
+        top: 4%;
+    }
+
+    .card {
+        top: 40%;
+        height: 300px;
+        transform: scale(1);
+    }
+
+    .cards .cardss {
+        margin-bottom: 20px;
+    }
+
+
+    .Menu-Section {
+        height: 1500px;
+    }
+
+
+    .main-menu img {
+        transform: scale(11.8);
+    }
+
+    .Breakfast {
+        top: 2%;
+        left: 0%;
+    }
+
+    .coffee {
+        top: 50%;
+        left: 0%;
+    }
+
+    .Breakfast,
+    .coffee {
+        position: static;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .menu-box {
+        width: 100% !important;
+    }
+
+
+
+    .Reviews-Section {
+        height: 1300px;
+    }
+
+
+    .formone {
+        position: static;
+        padding: 20px;
+    }
+
+    .msg {
+        width: 100%;
+    }
+
+    .sndmsgbtn {
+        position: static;
+        margin-top: 15px;
+        display: block;
+    }
+
+    .review-title {
+        top: 5%;
+        left: 50%;
+        font-size: 1.5rem;
+    }
+
+    .review-title h2 {
+        font-size: 3rem;
+    }
+
+    .review1,
+    .review2,
+    .review3 {
+        width: 90%;
+        top: 10%;
+        left: 5% !important;
+        margin-bottom: 20px;
+        position: absolute;
+        height: 350px;
+    }
+
+    .rev-line {
+        display: none;
+    }
+
+   
+
+    .revtype {
+        color: white;
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        color: orange;
+    }
+
+    .rev-content {
+        top: 42%;
+        left: 20px;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .rating {
+        bottom: 0;
+        left: 30px;
+    }
+
+    .review-title {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .title {
+    top: 10%;
+    left: 15%;
+}
+
+.contact{
+    height: 1700px;
+}
+
+
+.contact img{
+    transform: scale(0.5);
+}
+
+
+
+.formone {
+    top: 25%;
+    left: 5%;
+}
+
+.formn{
+    flex-direction: column;
+}
+
+.formem{
+    padding: 0%;
+}
+
+.form-label{
+    width: 50px;
+}
+
+.msg {
+    height: 120px;
+    width: 100%;
+}
+
+
+.sndmsgbtn {
+    background-color: #BC6C25;
+    color: white;
+    left: 25%;
+}
+
+
+
+.info1{
+    top: 1000px;
+}
+
+.info2{
+    top: 1300px;
+    left: 20%;
+}
+
+.info3{
+    top: 1500px;
+    left: 10%;
+}
+
+    .arabianacademymap {
+        width: 70%;
+        height: 150px;
+        position: static;
+        top: 780px;
+        left: 15%;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width:992px) {
+    .navbar {
+        width: 100%;
+        left: 0;
+        top: 0%;
+        border-radius: 0;
+    }
+
+    .About-Section {
+        height: 900px;
+    }
+
+    .video-txt {
+        bottom: 5%;
+        left: 20%;
+        text-align: center;
+    }
+
+    .video1 {
+        width: 540px;
+        height: 300px;
+        top: 5%;
+        left: 20%;
+    }
+
+    .cafekl {
+        top: 42%;
+        left: 25%;
+        width: 50%;
+        text-align: center;
+    }
+
+    .cafekl h4 {
+        width: 100%;
+    }
+
+
+    .cards-section {
+        height: 1000px;
+    }
+
+    .cards-title {
+        top: 4%;
+    }
+
+    .card {
+        top: 40%;
+        height: 300px;
+        transform: scale(1);
+    }
+
+    .cards .cardss {
+        margin-bottom: 20px;
+    }
+
+
+    .Menu-Section {
+        height: 1500px;
+    }
+
+
+    .main-menu img {
+        transform: scale(4.2);
+    }
+
+    .Breakfast {
+        top: 2%;
+        left: 0%;
+    }
+
+    .coffee {
+        top: 50%;
+        left: 0%;
+    }
+
+    .Breakfast,
+    .coffee {
+        position: static;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .menu-box {
+        width: 100% !important;
+    }
+
+
+
+    .Reviews-Section {
+        height: 1300px;
+    }
+
+
+    .formone {
+        position: static;
+        padding: 20px;
+    }
+
+    .msg {
+        width: 100%;
+    }
+
+    .sndmsgbtn {
+        position: static;
+        margin-top: 15px;
+        display: block;
+    }
+
+    .review-title {
+        top: 5%;
+        left: 50%;
+        font-size: 1.5rem;
+    }
+
+    .review-title h2 {
+        font-size: 3rem;
+    }
+
+    .review1,
+    .review2,
+    .review3 {
+        width: 90%;
+        top: 10%;
+        left: 5% !important;
+        margin-bottom: 20px;
+        position: absolute;
+        height: 350px;
+    }
+
+    .rev-img1
+    {
+        width: 100%;
+    }
+
+    .rev-line {
+        display: none;
+    }
+
+   
+
+    .revtype {
+        color: white;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        color: orange;
+    }
+
+    .rev-content {
+        top: 42%;
+        left: 20px;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .rating {
+        bottom: 0;
+        left: 30px;
+    }
+
+    .review-title {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .title {
+    top: 10%;
+    left: 15%;
+}
+
+.contact{
+    height: 1700px;
+}
+
+
+
+
+
+
+.formone {
+    top: 25%;
+    left: 5%;
+}
+
+.formn{
+    flex-direction: column;
+}
+
+.formem{
+    padding: 0%;
+}
+
+.form-label{
+    width: 50px;
+}
+
+.msg {
+    height: 120px;
+    width: 100%;
+}
+
+
+.sndmsgbtn {
+    background-color: #BC6C25;
+    color: white;
+    left: 25%;
+}
+
+
+
+.info1{
+    top: 1000px;
+}
+
+.info2{
+    top: 1300px;
+    left: 20%;
+}
+
+.info3{
+    top: 1500px;
+    left: 10%;
+}
+
+    .arabianacademymap {
+        width: 50%;
+        height: 450px;
+        position: static;
+        top: 150px;
+        left: 45%;
+    }
+}
+
+
+@media (min-width: 993px) and (max-width:1200px) {
+    .navbar {
+        width: 100%;
+        left: 0;
+        top: 0%;
+        border-radius: 0;
+    }
+
+    .About-Section {
+        height: 900px;
+    }
+
+    .video-txt {
+        bottom: 5%;
+        left: 20%;
+        text-align: center;
+    }
+
+    .video1 {
+        width: 540px;
+        height: 300px;
+        top: 5%;
+        left: 25%;
+    }
+
+    .cafekl {
+        top: 45%;
+        left: 25%;
+        width: 50%;
+        text-align: center;
+    }
+
+    .cafekl h4 {
+        width: 100%;
+    }
+
+
+    .cards-section {
+        height: 1000px;
+    }
+
+    .cards-title {
+        top: 10%;
+    }
+
+    .card {
+        top: 40%;
+        height: 300px;
+        transform: scale(1);
+    }
+
+    .cards .cardss {
+        margin-bottom: 20px;
+    }
+
+
+    .Menu-Section {
+        height: 1500px;
+    }
+
+
+    .main-menu img {
+        transform: scale(4.2);
+    }
+
+    .Breakfast {
+        top: 2%;
+        left: 0%;
+    }
+
+    .coffee {
+        top: 50%;
+        left: 0%;
+    }
+
+    .Breakfast,
+    .coffee {
+        position: static;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .menu-box {
+        width: 100% !important;
+    }
+
+
+
+    .Reviews-Section {
+        height: 1300px;
+    }
+
+
+    .formone {
+        position: static;
+        padding: 20px;
+    }
+
+    .msg {
+        width: 100%;
+    }
+
+    .sndmsgbtn {
+        position: static;
+        margin-top: 15px;
+        display: block;
+    }
+
+    .review-title {
+        top: 5%;
+        left: 50%;
+        font-size: 1.5rem;
+    }
+
+    .review-title h2 {
+        font-size: 3rem;
+    }
+
+    .review1,
+    .review2,
+    .review3 {
+        width: 90%;
+        top: 10%;
+        left: 5% !important;
+        margin-bottom: 20px;
+        position: absolute;
+        height: 350px;
+    }
+
+    .rev-img1
+    {
+        width: 100%;
+    }
+
+    .rev-line {
+        display: none;
+    }
+
+   
+
+    .revtype {
+        color: white;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        color: orange;
+    }
+
+    .rev-content {
+        top: 42%;
+        left: 20px;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .rating {
+        bottom: 0;
+        left: 30px;
+    }
+
+    .review-title {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .title {
+    top: 10%;
+    left: 15%;
+}
+
+.contact{
+    height: 1700px;
+}
+
+
+
+
+
+
+.formone {
+    top: 25%;
+    left: 5%;
+}
+
+.formn{
+    flex-direction: column;
+}
+
+.formem{
+    padding: 0%;
+}
+
+.form-label{
+    width: 50px;
+}
+
+.msg {
+    height: 120px;
+    width: 100%;
+}
+
+
+.sndmsgbtn {
+    background-color: #BC6C25;
+    color: white;
+    left: 25%;
+}
+
+
+
+.info1{
+    top: 1000px;
+}
+
+.info2{
+    top: 1300px;
+    left: 20%;
+}
+
+.info3{
+    top: 1500px;
+    left: 10%;
+}
+
+    .arabianacademymap {
+        width: 50%;
+        height: 450px;
+        position: static;
+        top: 150px;
+        left: 45%;
+    }
+}

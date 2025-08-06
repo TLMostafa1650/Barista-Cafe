@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barista Cafe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <!-- Navbar  -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded-4 bg-opacity-50 position-fixed z-2  px-4 py-3"
+        data-bs-theme="dark" id="#navbar-scroll">
+        <div class="container-fluid">
+            <a class="nav-logo px-2" href=""><img src="./Media/IMGS/coffee-beans.png" alt=""></a>
+            <a class="navbar-brand fst-italic fw-bold fs-2" href="#">Barista</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Menu">our menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                    <li class="nav-item btn btn-outline-light rounded-pill">
+                        <a class="nav-link py-1" href="./reservation.html">reservation &nbsp; <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+   
+
+
+
+    <!-- Main-Section  -->
+
+    <section id="Home" class="Main-Section min-vh-100 position-relative">
+        <div class="main-slider position-absolute top-0 start-0 w-100">
+            <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Media/IMGS/happy-loving-couple-bakers-drinking-coffee-looking-notebook.jpg"
+                            class="d-block " alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Media/IMGS/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg"
+                            class="d-block " alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Media/IMGS/./young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg"
+                            class="d-block " alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-data position-absolute top-50 start-50 translate-middle z-2">
+            <div class="idk">
+                <h6>Welcome to Barista.co</h6>
+                <h2 class="text-white fw-bolder">Cafe Klang</h2>
+                <p class="text-white">Your Favourite Coffee Daily Lives</p>
+                <div class="Sliderdatabuttons">
+                    <a class="btn btn-outline-light m-2 rounded-pill border-0 px-4 py-2" href="#about">Our Story</a>
+                    <a class="checkmenu btn rounded-pill px-4 py-2" href="#Menu">Check Menu</a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- About-Section  -->
+    
+    <section id="about" class="About-Section position-relative d-flex just align-items-center">
+        <div class="video1">
+            <video autoplay loop muted playsinline>
+                <source src="./Media/VODS/pexels-mike-jones-9046237.mp4" type="video/mp4">
+            </video>
+            <div class="video-txt">
+                <h5 class="fs-2">We Started Since 2009.</h5>
+                <h5 class="fs-2">Best Cafe in Klang</h5>
+            </div>
+        </div>
+
+        <div class="cafekl">
+            <p>Barista.co</p>
+            <h2>Cafe KL</h2>
+            <h4>The café had been in the town for as long as anyone could remember, and it had become a beloved
+                institution among the locals.</h4>
+            <br>
+            <h4>The café was run by a friendly and hospitable couple, Mr. and Mrs. Johnson. Barista Cafe is free
+                Bootstrap 5 HTML layout provided by <span><a href="https://www.tooplate.com/"
+                        target="_blank">Tooplate</a></span></h4>
+            <br>
+            <h3 class="btn btn-outline-light rounded-pill fw-bold px-3 py-2">Meet Baristas</h3>
+        </div>
+
+
+    </section>
+
+
+    <!-- Cards-Section   -->
+
+    <section class="cards-section position-relative py-5">
+        <div class="cards-title position-absolute translate-middle d-flex flex-column align-items-center justify-content-end">
+            <p class=" fw-lighter">
+                Creative Baristas</p>
+            <h2 class="fw-bold fs-1">Meet People</h2>
+        </div>
+        <div class="cards row h-75 mx-3 px-5">
+            <div class="cardss col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card position-relative">
+                    <img src="./Media/IMGS/team/portrait-elegant-old-man-wearing-suit.jpg"
+                        class="card-img-top position-absolute top-0 start-0 " alt="...">
+                    <div class="card-body position-absolute bottom-0 start-0 z-3">
+                        <h5 class="card-title fw-bolder text-light fs-1">Steve</h5>
+                        <p class="text-light display-6">Your Favourite Coffee daily lives tempor</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="cardss col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card position-relative ">
+                    <img src="./Media/IMGS/team/cute-korean-barista-girl-pouring-coffee-prepare-filter-batch-brew-pour-working-cafe.jpg"
+                        class="card-img-top position-absolute top-0 start-0" alt="...">
+                    <div class="card-body position-absolute bottom-0 start-0 z-3">
+                        <h5 class="card-title fw-bolder text-light fs-1">Sandra</h5>
+                        <p class="text-light display-6">Your Favourite Coffee daily lives.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cardss col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card position-relative ">
+                    <img src="./Media/IMGS/team/small-business-owner-drinking-coffee.jpg"
+                        class="card-img-top position-absolute top-0 start-0" alt="...">
+                    <div class="card-body position-absolute bottom-0 start-0 z-3">
+                        <h5 class="card-title fw-bolder text-light fs-1">Jackson</h5>
+                        <p class="text-light display-6">Your Favourite Coffee daily lives.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardss col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card position-relative ">
+                    <img src="./Media/IMGS/team/smiley-business-woman-working-cashier.jpg"
+                        class="card-img-top position-absolute top-0 start-0" alt="...">
+                    <div class="card-body position-absolute bottom-0 start-0 z-3">
+                        <h5 class="card-title fw-bolder text-light fs-1">Michelle</h5>
+                        <p class="text-light display-6">Your Favourite Coffee daily consectetur</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+
+    <!-- Menu-Section -->
+
+    <section class="Menu-Section w-100 position-relative overflow-hidden" id="Menu">
+        <div class="main-menu">
+            <img src="./Media/IMGS/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg"
+                class="d-block" alt="">
+        </div>
+        <div class="Breakfast position-absolute z-2 text-white">
+            <div class="menu-box p-5 rounded-4 text-start">
+                <h6 class="text-warning">Delicious Menu</h6>
+                <h2 class="fw-bold display-5 mb-4">Breakfast</h2>
+
+                <div class="menu-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="fw-bold mb-0 text-danger">Pancakes</h5>
+                        <p class="text-white-50 small mb-1">Fresh brewed coffee and steamed milk</p>
+                    </div>
+                    <span class="price">$12.50</span>
+                </div>
+
+                <div class="menu-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="fw-bold mb-0 text-danger">Toasted Waffle</h5>
+                        <p class="text-white-50 small mb-1">Brewed coffee and steamed milk</p>
+                    </div>
+                    <span class="price">
+                        <del class="text-white-50">$16.50</del> <strong>$12.00</strong>
+                    </span>
+                </div>
+
+                <div class="menu-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="fw-bold mb-0 text-danger">Fried Chips <span
+                                class="badge bg-warning text-dark ms-2">Recommend</span></h5>
+                        <p class="text-white-50 small mb-1">Rich Milk and Foam</p>
+                    </div>
+                    <span class="price">$15.00</span>
+                </div>
+
+                <div class="menu-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="fw-bold mb-0 text-danger">Pancakes</h5>
+                        <p class="text-white-50 small mb-1">Fresh brewed coffee and steamed milk</p>
+                    </div>
+                    <span class="price">$12.50</span>
+                </div>
+
+                <div class="menu-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="fw-bold mb-0 text-danger">Banana Cakes</h5>
+                        <p class="text-white-50 small mb-1">Rich Milk and Foam</p>
+                    </div>
+                    <span class="price">$18.00</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="coffee position-absolute z-2 text-white">
+            <div class="menu-box p-5 rounded-4 text-start">
+                <h6 class="text-warning">Favourite Menu</h6>
+                <h2 class="fw-bold display-5 mb-4">Coffee</h2>
+
+                <div class="menu-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="fw-bold mb-0 text-danger">Latte</h5>
+                        <p class="text-white-50 small mb-1">Fresh brewed coffee and steamed milk</p>
+                    </div>
+                    <span class="price">
+                        <del class="text-white-50">$12.50</del> <strong>$7.50</strong>
+                    </span>
+                </div>
+
+                <div class="menu-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="fw-bold mb-0 text-danger">White Coffee <span
+                                class="badge bg-warning text-dark ms-2">Recommend</span></h5>
+                        <p class="text-white-50 small mb-1">Brewed coffee and steamed milk</p>
+                    </div>
+                    <span class="price">
+                        <strong>$5.90</strong>
+                    </span>
+                </div>
+
+                <div class="menu-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="fw-bold mb-0 text-danger">Chocolate Milk </h5>
+                        <p class="text-white-50 small mb-1">Rich Milk and Foam</p>
+                    </div>
+                    <span class="price">$5.50</span>
+                </div>
+
+                <div class="menu-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="fw-bold mb-0 text-danger">Greentea</h5>
+                        <p class="text-white-50 small mb-1">Fresh brewed coffee and steamed milk</p>
+                    </div>
+                    <span class="price">$7.50</span>
+                </div>
+
+                <div class="menu-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="fw-bold mb-0 text-danger">Dark Chocolate</h5>
+                        <p class="text-white-50 small mb-1">Rich Milk and Foam</p>
+                    </div>
+                    <span class="price">$7.25</span>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <!-- Reviews-Section  -->
+
+    <section id="reviews" class="Reviews-Section position-relative">
+
+        <div class="review-title text-light position-absolute translate-middle text-center">
+            <p class="fw-light">Reviews by Customers</p>
+            <h2 class="fw-bold">Testimonials</h2>
+        </div>
+
+
+        <div class="rev-line">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+
+
+
+
+        <div class="review1 position-relative rounded-4">
+            <img class="rev-img1 bg-img" src="./Media/IMGS/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg"
+                alt="">
+
+
+
+
+
+
+            <img class="rev-img" src="./Media/IMGS/reviews/TLMO.png" alt="">
+
+            <h4 class="revname"> Mostafa EL-Hosseny</h4>
+            <h5 class="revtype fw-bolder">Owner</h5>
+
+
+
+
+            <h6 class="rev-content position-absolute ">Iam The Owner Of This Cafe of course am gonna give my self a
+                Solid 5
+                Stars ... LOL best place ever to have some coffee before some work</h6>
+
+            <h5 class="rating position-absolute text-light">5 Rating <i class="fa-solid fa-star"></i> <i
+                    class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+
+            </h5>
+
+
+        </div>
+
+
+        <div class="review2 position-relative rounded-4">
+            <img class="rev-img1 bg-img" src="./Media/IMGS/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg"
+                alt="">
+
+            <img class="rev-img" src="./Media/IMGS/reviews/Geralt_of_Rivia.png" alt="">
+
+            <h4 class="revname">Geralt Of Rivia</h4>
+            <h5 class="revtype fw-bolder">Witcher</h5>
+
+
+
+
+            <h6 class="rev-content position-absolute ">Stopped by this place between contracts. Needed something
+                stronger than potion fumes so I Ordered a black coffee & Played a round of Gwent while waiting ... Minus
+                half star — they didn't have Zoltan Chivay on a card.
+
+            </h6>
+
+            <h5 class="rating position-absolute text-light">4.5 Rating <i class="fa-solid fa-star"></i> <i
+                    class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star" style="color: #000000;"></i>
+
+            </h5>
+
+
+        </div>
+
+
+
+        <div class="review3 position-relative rounded-4">
+            <img class="rev-img1 bg-img" src="./Media/IMGS/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg"
+                alt="">
+
+            <img class="rev-img" src="./Media/IMGS/reviews/JShand.png" alt="">
+
+            <h4 class="revname"> Johhny SilverHand</h4>
+            <h5 class="revtype fw-bolder">Rockstar</h5>
+
+
+
+
+            <h6 class="rev-content position-absolute ">
+                Staff asked me if I wanted to try the ‘Silverhand Special. &nbsp;&nbsp; Told ’em there’s only one Johnny
+                Silverhand — and he takes his coffee black.
+                Would I come back? Maybe. If the revolution doesn’t burn this place down first .. XD
+            </h6>
+
+            <h5 class="rating position-absolute text-light">4.5 Rating <i class="fa-solid fa-star"></i> <i
+                    class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star" style="color: #000000;"></i>
+
+            </h5>
+
+
+        </div>
+
+
+    </section>
+
+    <!-- Contact-Section -->
+
+    <section id="contact" class="contact-page position-relative">
+        <div class="container">
+
+            <div class="title position-absolute text-light z-3">
+                <p>Say Hello</p>
+                <h2 class="fw-bolder fs-1">Contact</h2>
+            </div>
+
+
+            <div class="contact position-absolute top-0 start-0 w-100"><img class="d-none d-lg-block"
+                    src="./Media/IMGS/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg"
+                    alt="">
+            </div>
+
+
+
+            <div class="formone position-absolute">
+                <form id="contactform">
+                    <div class="formn d-flex">
+                        <div class="mb-3">
+                            <label for="Name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="Name" aria-describedby="Namehelp"
+                                placeholder="Mostafa" required>
+                        </div>
+
+                        <div class="formem mb-3">
+                            <label for="exampleInputEmail1" class=" form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Mostafa@gmail.com" required>
+                            <div id="emailHelp" class="form-text text-light" required>We'll never share your email with anyone
+                                else.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="msg" class="form-label">How can we Help?</label>
+
+                        <textarea class="msg form-control" id="msg" aria-describedby="msg"
+                            placeholder="Message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="sndmsgbtn position-absolute btn rounded-pill fw-bold px-3 py-2 mt-4">Send
+                        Message
+                    </button>
+                </form>
+            </div>
+
+
+            <div class="map">
+                <iframe class="arabianacademymap position-absolute rounded-4"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.1353011274323!2d29.932382059351617!3d31.21698067446106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5754edecd6f%3A0xdcd3180af59fec4a!2sARABIAN%20ACADEMY%20-%20(%20sporting%20branch%20)!5e0!3m2!1sar!2seg!4v1754251698576!5m2!1sar!2seg"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+            <div class="info1 position-absolute">
+                <p class="">where to find us ?</p>
+                <h5 class=" w-75"><i class="fa-solid fa-location-dot"></i> ARABIAN ACADEMY - (Sporting
+                    Branch), Alexandria, Egypt</h5>
+
+                <br>
+                <a href="https://www.facebook.com/ArabianAcademy.org/?locale=ar_AR" target="_blank"><i
+                        class="fa-brands fa-facebook text-light"></i></a>
+
+                <a href="https://x.com/minthu" target="_blank"><i class="fa-brands fa-twitter text-light px-4"></i></a>
+
+                <a href="https://x.com/minthu" target="_blank"><i class="fa-brands fa-whatsapp text-light"></i></a>
+
+                <p class="mt-4">Copyright © Barista Cafe 2048 - Design: TLMO</p>
+
+            </div>
+
+
+            <div class="info2 position-absolute">
+                <p class="text-light">Contact</p>
+                <h5 class=" d-inline-block">Phone:</h5>
+                <h6 class="d-inline-block">0123456789</h6>
+                <br>
+                <h5 class=" d-inline-block">Email:</h5>
+                <h6 class="d-inline-block">hello@barista.co</h6>
+            </div>
+
+
+            <div class="info3 position-absolute">
+                <p class="text-light">Opening Hours.</p>
+                <h5 class=" d-inline-block">Monday-Friday</h5>
+                <h6 class="d-inline-block">____________________ 9:00 - 18:00</h6>
+                <br>
+                <h5 class=" d-inline-block">Saturday</h5>
+                <h6 class="d-inline-block">____________________ 11:00 - 16:30</h6>
+                <br>
+                <h5 class=" d-inline-block">Sunday</h5>
+                <h6 class="d-inline-block text-dan">____________________ Closed</h6>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
+
+    
+</body>
+
+</html>
